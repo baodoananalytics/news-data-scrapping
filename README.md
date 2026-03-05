@@ -17,15 +17,43 @@ The pipeline aggregates high-quality market intelligence from Vietnam’s most p
 
 1. **Comprehensive Metadata Extraction:**
 For every captured article, the workflow extracts a structured dataset to ensure full traceability:
-  * Source Attribution: Originating publisher.
-  * Metadata: Article Title and a concise Summary.
-  * Direct Access: Original Source URL for deep-dive reading.
-  * Temporal Tracking: Exact Published Time to maintain chronological relevance.
+    * Source Attribution: Originating publisher.
+    * Metadata: Article Title and a concise Summary.
+    * Direct Access: Original Source URL for deep-dive reading.
+    * Temporal Tracking: Exact Published Time to maintain chronological relevance.
 
 2. **Intelligent Keyword-based Filtering:**
 To maintain the news content exactly, the script implements a strict Boolean filtering logic. An article is only processed if its title contains at least one industry-specific keyword:
-  * Real Estate Sector: Targeted via terms such as "Nhà ở" (Housing), "Dự án" (Projects), and "Bất động sản".
-  * Construction Materials: Filtered by strategic keywords like "Thép" (Steel) and "Vật liệu xây dựng" (Construction Materials).
+    * Real Estate Sector: Targeted via terms such as "Nhà ở" (Housing), "Dự án" (Projects).
+    * Construction Materials: Filtered by strategic keywords like "Thép" (Steel) and "Vật liệu xây dựng" (Construction Materials).
 
+# Project Structure
+``` text
+├── data/
+│   ├── news.csv    
+├── code/
+│   └── main.py
+│   └── hardcode.py
+├── demo/
+│   ├── demo.gif
+│   ├── notifications_screenshot.png
+├── LICENSE
+└── README.md                    # Project documentation
+```
 
+# Project Steps
+1. Automated Data Extraction (Web Scraping)
+    * Hardcoded target sources name, URLs, industry-specific keywords and storage filepath.
+    * Used requests and Beautifulsoup to extract artile title, summary and URLs. 
+3. Data Storage:
+    * Utilized Pandas to transform raw scraped data into a structured Excel-based database.
+    * Removed duplicated to prevent redundant information base on news title.
+4. Data Sending to chatbox:
+    * Implementing Power Automate to send news periodically (9a.m and 3p.m every work day).
+    * Labelled "Alerted" for tracking status and ensuring no duplicate notifications.
 
+---
+# Scale up
+
+# Author
+*  [Linkedin](https://www.linkedin.com/in/bao-doan-833a6615a/)
