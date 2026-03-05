@@ -1,4 +1,4 @@
-# news-data-scrapping
+# News Web Scrapping
 Automated news extraction by BeautifulSoup for web scraping and Power Automate for daily delivery to communication channels
 
 # Overview
