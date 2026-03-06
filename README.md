@@ -30,12 +30,11 @@ To maintain the news content exactly, the script implements a strict Boolean fil
 # Project Structure
 ``` text
 ├── data/
-│   ├── news.csv    
+│   ├── News_Web_Scrapping.xlsx    
 ├── code/
 │   └── main.py
 │   └── hardcode.py
 ├── demo/
-│   ├── demo.gif
 │   ├── notifications_screenshot.png
 ├── LICENSE
 └── README.md                    # Project documentation
