@@ -53,6 +53,7 @@ To maintain the news content exactly, the script implements a strict Boolean fil
 
 ---
 # Scale up
+This project featured a highly flexible design. By simply updating the parameters such as keywords. sources and URLs in the hardcode.py module, we will have other industry-specific news with minimal efforts.
 
 # Author
 *  [Linkedin](https://www.linkedin.com/in/bao-doan-833a6615a/)
